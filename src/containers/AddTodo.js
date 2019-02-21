@@ -19,8 +19,8 @@ let AddTodo = ({ dispatch }) => {
       >
         <label> Enter a new task :
         <input
-            ref={node => {
-                input = node
+            ref={inputElement => {
+                input = inputElement
             }}
         />
         </label>
