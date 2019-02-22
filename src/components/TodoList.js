@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
+import List from '@material-ui/core/List'
+import Grid from '@material-ui/core/Grid'
 
 const TodoList = ({ todos, toggleTodo, deleteTodo, toggleDump}) => (
-  <div>
+  <Grid item xs={24}>
     Your todolist <span>{todos.length === 0 ?  "is currently empty" : ':'}</span>
-    <ul>
+    <List>
       {todos.map(todo =>
         <Todo
           key={todo.id}
@@ -15,8 +17,8 @@ const TodoList = ({ todos, toggleTodo, deleteTodo, toggleDump}) => (
           toggleDump={toggleDump}
         />
       )}
-    </ul>
-  </div>
+    </List>
+  </Grid>
 )
 
 TodoList.propTypes = {

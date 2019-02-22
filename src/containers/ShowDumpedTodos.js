@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import DumpTodoList from '../components/DumpTodoList'
-import { toggleDump } from '../actions'
+import {deleteTodo, toggleDump } from '../actions'
 
 const getDumpedTodos = (todos) => {
         return todos.filter(t => t.dumped)
@@ -11,7 +11,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  toggleDump: id => dispatch(toggleDump(id))
+  toggleTodo: id => dispatch(toggleDump(id)),
+  deleteTodo: id => dispatch(deleteTodo(id))
 })
 
 export default connect(

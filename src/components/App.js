@@ -2,15 +2,21 @@ import React from 'react'
 import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
-import ShowDumpedTodos from '../containers/ShowDumpedTodos';
+import ShowDumpedTodos from '../containers/ShowDumpedTodos'
+import Grid from '@material-ui/core/Grid'
 
 const App = () => (
-  <div>
+  <Grid 
+    container 
+    direction="column"
+    justify="center"
+    alignContent="center"
+  >
     <AddTodo />
     <VisibleTodoList />
     <Footer />
     <ShowDumpedTodos />
-  </div>
+  </Grid>
 )
 
 export default App
