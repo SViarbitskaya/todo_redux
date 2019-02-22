@@ -6,9 +6,20 @@ const todos = (state = [], action) => {
         {
           id: action.id,
           text: action.text,
-          completed: false
+          completed: false,
+          dumped: false
         }
       ]
+    case 'DELETE_TODO':
+      //removes todo from the todolist
+      return state.filter(todo => todo.id !== action.id)
+    case 'TOGGLE_DUMP':
+      //marks todo as "dumped"
+      return state.map(todo =>
+          (todo.id === action.id)
+            ? {...todo, dumped: !todo.dumped, completed: false}
+            : todo
+      )
     case 'TOGGLE_TODO':
       return state.map(todo =>
         (todo.id === action.id)
