@@ -18,6 +18,7 @@ describe('todos reducer', () => {
       {
         text: 'Run the tests',
         completed: false,
+        dumped: false,
         id: 0
       }
     ])
@@ -27,6 +28,7 @@ describe('todos reducer', () => {
         {
           text: 'Run the tests',
           completed: false,
+          dumped: false,
           id: 0
         }
       ], {
@@ -38,10 +40,12 @@ describe('todos reducer', () => {
       {
         text: 'Run the tests',
         completed: false,
+        dumped: false,
         id: 0
       }, {
         text: 'Use Redux',
         completed: false,
+        dumped: false,
         id: 1
       }
     ])
@@ -51,10 +55,12 @@ describe('todos reducer', () => {
         {
           text: 'Run the tests',
           completed: false,
+          dumped: false,
           id: 0
         }, {
           text: 'Use Redux',
           completed: false,
+          dumped: false,
           id: 1
         }
       ], {
@@ -66,14 +72,17 @@ describe('todos reducer', () => {
       {
         text: 'Run the tests',
         completed: false,
+        dumped: false,
         id: 0
       }, {
         text: 'Use Redux',
         completed: false,
+        dumped: false,
         id: 1
       }, {
         text: 'Fix the tests',
         completed: false,
+        dumped: false,
         id: 2
       }
     ])
@@ -85,10 +94,12 @@ describe('todos reducer', () => {
         {
           text: 'Run the tests',
           completed: false,
+          dumped: false,
           id: 1
         }, {
           text: 'Use Redux',
           completed: false,
+          dumped: false,
           id: 0
         }
       ], {
@@ -99,10 +110,12 @@ describe('todos reducer', () => {
       {
         text: 'Run the tests',
         completed: true,
+        dumped: false,
         id: 1
       }, {
         text: 'Use Redux',
         completed: false,
+        dumped: false,
         id: 0
       }
     ])
